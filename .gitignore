@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 .DS_Store
+sample_func.js
 
 # C extensions
 *.so
