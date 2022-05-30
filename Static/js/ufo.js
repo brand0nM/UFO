@@ -1,12 +1,10 @@
 
-
 const tableData = data; // import the data from data.js
 var tbody = d3.select("tbody"); // Reference the HTML table using d3
 
 
 function buildTable(data) { // dynamic table building func
     tbody.html(""); // First, clear out any existing data
-  
     data.forEach((dataRow) => { // loop, appending each cell in every row
         
         let row = tbody.append("tr");// Append a row to the table body
@@ -19,12 +17,9 @@ function buildTable(data) { // dynamic table building func
 
 
 function handleClick() {
-    const filters = [ // Create a variable to keep track of all the filters as an object.
-    d3.select("#datetime").property("value"),
-    d3.select("#city").property("value"),
-    d3.select("#state").property("value"),
-    d3.select("#country").property("value"),
-    d3.select("#shape").property("value")]
+    const filters = [ d3.select("#datetime").property("value"), d3.select("#city").property("value"),
+    d3.select("#state").property("value"), d3.select("#country").property("value"), d3.select("#shape").property("value")];
+
     let filteredData = tableData;
 
     if (filters[0]) {filteredData = filteredData.filter(row => row.datetime === filters[0]);};
