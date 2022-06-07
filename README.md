@@ -1,17 +1,19 @@
 # UFO Dashboard
 ## Overview
+Using scraped UFO sightings data, we want to store this info in an interactive dashboard 
+
 ### Purpose
+Using HTML, create containers to hold data, then Javascript to update and filter based on the user input.
 
 ## Analysis
-The written analysis has the following:
-
-Overview of the analysis:
-
-The purpose is well defined (2 pt)
+To make the website active, first create the buildTable function, creating the unfiltered-table and dynamically update if parameters are filtered. Use the handleClick function- or the filter function- to store the location of the input boxes. By default their values will be false (since they are empty) but, if the text box is filled it's value will be true (and a new table will be built). Finally, add an event listener, these activate the handleClick function on a button click.
 
 ## Results
-There is a description of how to perform a search, with images. (4 pt)
+These results were filtered by date and city. <br />
+<img width="1440" alt="Screen Shot 2022-06-06 at 5 33 56 PM" src="https://user-images.githubusercontent.com/79609464/172267292-b5fed50a-3eae-469c-a7ae-c7fcb326fecb.png">
 
 ## Summary
-The summary addresses one drawback of this webpage (2 pt)
-The summary addresses two additional recommendations for further development (4 pt)
+We've created a dashboard that displays 'small' amounts of data and filters based on user inputs.
+
+### Further Improvements 
+Storing and retrieving data in this format can be quite tedious, one would first have to create dictionaries in another language used to scrape the data (like python), then export to a .js file. In real life, we should read data from .JSON files, but that would require a local server hosted from our terminal. Additionally the .CS is quite dull we could add animations or something to make the page less 2000.
