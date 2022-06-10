@@ -1,12 +1,12 @@
 # UFO Dashboard
 ## Overview
-Using scraped UFO sightings data, we want to store this info in an interactive dashboard 
+Store scraped UFO data in an interactive dashboard 
 
 ### Purpose
-Using HTML, create containers to hold data, then Javascript to update and filter based on the user input.
+Use HTML to create containers that hold data, then Javascript to update and filter based on the user input.
 
 ## Analysis
-To make the website active, first create the buildTable function, creating the unfiltered-table and dynamically update if parameters are filtered. Use the handleClick function- or the filter function- to store the location of the input boxes. By default their values will be false (since they are empty) but, if the text box is filled it's value will be true (and a new table will be built). Finally, add an event listener, these activate the handleClick function on a button click.
+To make the website active, first create the buildTable function, creating the unfiltered-table and dynamically update if parameters are filtered. Then use the handleClick function- or the filter function- to store the location of the input boxes. By default their values will be false (since they are empty) but, if the text box is filled it's value will be true (and a new table will be built). Finally, add an event listener, these activate the handleClick function on a button click.
 
 ## Results
 These results were filtered by date and city. <br />
