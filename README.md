@@ -16,4 +16,4 @@ These results were filtered by date and city. <br />
 We've created a dashboard that displays 'small' amounts of data and filters based on user inputs.
 
 ### Further Improvements 
-Storing and retrieving data in this format can be quite tedious, one would first have to create dictionaries in another language used to scrape the data (like python), then export to a .js file. In real life, we should read data from .JSON files, but that would require a local server hosted from our terminal. Additionally the .CS is quite dull we could add animations or something to make the page less 2000.
+Storing and retrieving data in this format can be quite tedious, one would first have to create dictionaries in another language used to scrape the data (like python), then export to a .js file. In real life, we should read data from .JSON files, but that would require a local server hosted from our terminal. Additionally the .css is quite dull we could add animations or something to make the page less 2000.
